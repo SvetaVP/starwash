@@ -1,2 +1,15 @@
 @use "./normalize.scss";
 @use "./grid.scss";
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 1;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}

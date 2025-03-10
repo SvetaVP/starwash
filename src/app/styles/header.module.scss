@@ -1,5 +1,8 @@
 .header {
   color: #fff;
+  position: relative;
+  z-index: 2;
+  
   a {
     color: inherit;
   }

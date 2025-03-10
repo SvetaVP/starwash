@@ -1,18 +1,47 @@
+"use client";
 import Header from "./components/header";
 import Image from "next/image";
-import banner from "./img/home_baner_luxurious.jpeg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import img1 from "./img/home_banner_1.jpeg";
+import img2 from "./img/home_banner_2.jpeg";
+import img3 from "./img/home_banner_3.jpeg";
+import styles from "./styles/home.module.scss";
+import clsx from "clsx";
+
+const images = [
+  img1, img2, img3
+];
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Header />
       <main>
-        <section>
-          <div>
-            <Image src={banner} alt="Starwash Firmenlogo" width={200} height={100}/>
-          </div>
+        <section className={styles.homeMainSection}>
+          <Swiper
+            modules={[Navigation, Pagination, Autoplay]}
+            spaceBetween={50}
+            slidesPerView={1}
+            navigation
+          >
+            {images.map((src, index) => (
+              <SwiperSlide key={index} className={styles.carousel}>
+                <Image
+                  src={src}
+                  alt={`Slide ${index + 1}`}
+                  width={800} 
+                  height={500}
+                  priority={index === 0}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
           <h1>
-            Vertrauen Sie uns Ihr Fahrzeug an – Ihre Werkstatt mit makelloser Reputation.
+            Vertrauen Sie uns Ihr Fahrzeug an – Ihre Werkstatt mit makelloser
+            Reputation.
           </h1>
         </section>
         <section>
@@ -43,13 +72,9 @@ export default function Home() {
         </section>
       </main>
       <footer>
-        <div>
-          Kontakt
-        </div>
-        <div>
-          Social media
-        </div>
+        <div>Kontakt</div>
+        <div>Social media</div>
       </footer>
-    </div>
+    </>
   );
 }
