@@ -18,6 +18,7 @@ export default function Header() {
                   alt="Starwash Firmenlogo"
                   width={200}
                   height={100}
+                  className="logo"
                 />
               </span>
               <span className={styles.designElementRight}></span>
