@@ -1,3 +1,50 @@
-.footer {
-    background-color: #494949;
+.footerWrapper {
+  background-color: #000;
+  padding: 40px 0 60px;
+  box-shadow: 0px -12px 12px 0px #696969;
+  color: #d8d8d8;
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+.footerContactTitle {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footerInfoWrapper {
+  margin-top: 20px;
+}
+
+.footerContact {
+    color: #9b9b9b;
+}
+
+.footerMediaWrapper {
+    div {
+        display: flex;
+    }
+
+    a {
+        display: inline-flex;
+        margin-right: 5px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+
+    img {
+        max-width: 60px;
+    }
 }

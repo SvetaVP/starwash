@@ -52,38 +52,6 @@ export default function Service() {
 
         <div>
           <div className="card">
-            <h3 className="card-title">
-              Computergestützte Fehler- und Motordiagnose
-            </h3>
-            <Image
-              className="card-img"
-              src={motordiagnose}
-              alt="Mechaniker führt computergestützte Fehler- und Motordiagnose an einem modernen Auto in einer gut beleuchteten Werkstatt durch."
-            />
-            <div className="card-text">
-              <div className="card-description">
-                Mit modernster Computerdiagnosetechnologie hilft StarWash, Fehler
-                im Fahrzeug zu identifizieren und eine präzise Reparatur zu
-                planen.
-              </div>
-              <a className="card-link" href="#">
-                Weitere Details
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="24px"
-                  width="24px"
-                  viewBox="0 -960 960 960"
-                  fill="#fff"
-                >
-                  <path d="M383-480 200-664l56-56 240 240-240 240-56-56 183-184Zm264 0L464-664l56-56 240 240-240 240-56-56 183-184Z"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div className="card">
             <h3 className="card-title">KFZ Inspektion</h3>
             <Image
               className="card-img"

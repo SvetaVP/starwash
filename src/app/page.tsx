@@ -47,9 +47,10 @@ export default function Home() {
             <div>
               <section className="about-StarWash">
                 <h2>
-                  Hallo, willkommen in unserer Werkstatt in Münster – StarWash.
+                  Hallo! <br></br>
+                  Willkommen in unserer Werkstatt in Münster – StarWash.
                 </h2>
-                <div className="border"></div>
+                <div className="border-secondary"></div>
                 <div className="about-StarWash-text">
                   <Image src={willkommen} alt="" />
                   <p>
@@ -139,7 +140,38 @@ export default function Home() {
                 <h3>Neuigkeiten aus unserer Werkstatt</h3>
 
                 <section className="news-item">
-                  <div className="border"></div>
+                <div className="border-secondary"></div>
+                  <div className="news-item-wrapper">
+                    <div className="news-item-img">
+                      <Image src={willkommen} alt="" />
+                    </div>
+                    <div className="news-item-text">
+                      <data value="">30 Marz 2025</data>
+                      <h5>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Voluptatibus, fugit?
+                      </h5>
+                      <div>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Reiciendis rerum, labore facere quisquam porro
+                          modi at ab quia, similique optio aliquid. Nostrum esse
+                          optio debitis accusamus magni praesentium minus odit.
+                          Libero animi non, consectetur doloremque, adipisci
+                          facere quo sapiente eveniet, accusamus sunt unde
+                          debitis mollitia minima ab veniam a quos?
+                        </p>
+
+                        <p>
+                          <a href="#">mehr lesen →</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section className="news-item">
+                <div className="border-secondary"></div>
                   <div className="news-item-wrapper">
                     <div className="news-item-img">
                       <Image src={willkommen} alt="" />
@@ -147,30 +179,32 @@ export default function Home() {
                     <div className="news-item-text">
                       <data value="">29 Marz 2025</data>
                       <h5>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Voluptatibus, fugit?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Voluptatibus, fugit?
                       </h5>
                       <div>
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                          Reiciendis rerum, labore facere quisquam porro modi at ab
-                          quia, similique optio aliquid. Nostrum esse optio debitis
-                          accusamus magni praesentium minus odit. Libero animi non,
-                          consectetur doloremque, adipisci facere quo sapiente
-                          eveniet, accusamus sunt unde debitis mollitia minima ab
-                          veniam a quos?
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Reiciendis rerum, labore facere quisquam porro
+                          modi at ab quia, similique optio aliquid. Nostrum esse
+                          optio debitis accusamus magni praesentium minus odit.
+                          Libero animi non, consectetur doloremque, adipisci
+                          facere quo sapiente eveniet, accusamus sunt unde
+                          debitis mollitia minima ab veniam a quos?
                         </p>
 
-                        <p><a href="#">mehr lesen</a></p>
+                        <p>
+                          <a href="#">mehr lesen →</a>
+                        </p>
                       </div>
                     </div>
                   </div>
                 </section>
 
-                <a href="#">alle StarWash News</a>
+                <a href="#" className="button button-primary">alle StarWash News</a>
               </section>
             </div>
-            <div className="">
+            <div className="advantagesWrapper">
               <section className="advantages">
                 <h3>Unsere Vorteile</h3>
                 <div className="border"></div>
